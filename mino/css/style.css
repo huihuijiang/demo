@@ -1,0 +1,113 @@
+*{padding: 0;margin: 0;}
+			html,body{
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+			}
+			.swiper-container,.swiper-wrapper,.swiper-slide{
+				width: 100%;
+				height: 100%;
+			}
+			.page1{
+				
+				position: relative;
+			}
+			.page2{
+				background: yellow;
+			}
+			.page3{
+				background: green;
+			}
+			.page1 img{
+				display: block;
+				
+				width:100%;
+				height:100%;
+				
+			}
+			.page1 .star{
+				position:absolute;
+				left:50px;
+				top:50px;
+				z-index:2;
+				color:#5b5bfb;
+				font-size:2rem;
+				animation: shing 0.5s ease both;
+				animation-iteration-count: infinite;
+				animation-direction: alternate;
+			}
+			.page1 .txt{
+				width:10rem;
+				height:1rem;
+				background:url(../img/1483618869_863671.png) no-repeat;
+				background-size:auto 80%;
+				animation: shing 0.5s ease both;
+				animation-iteration-count: infinite;
+				animation-direction: alternate;
+			}
+			@keyframes shing{
+				from{opacity: 1;}
+				to{opacity:0.5 ;}
+			}
+			.page1 .huangguan{
+				position:absolute;
+				left:250px;
+				top:20px;
+				z-index:2;
+				font-size:3rem;
+				color:#e7f9f9;
+				transform: rotate(45deg);
+				animation: shing2 1s linear both;
+				animation-iteration-count: infinite;
+				animation-direction: alternate;
+			}
+			@keyframes shing2{
+				from{opacity: 1;}
+				to{opacity:0.7 ;}
+			}
+			.page1 .xue{
+				position:absolute;				
+				z-index:2;				
+				font-size:0.8rem;	
+				
+				color:#fff;
+				
+				animation: play 10s linear infinite;
+			}
+			.page1 .cube{
+				width:100%;
+				height:100%;
+				position: absolute;
+				top:0;
+				left:0;
+			}
+			
+			@keyframes play{
+				0%{transform: rotate(0);top:0;}
+				100%{transform: rotate(360deg) ;top:100%;}
+			}
+			.music{
+				position:absolute;
+				width:2rem;
+				height:2rem;
+				background:url(../img/music.png) no-repeat center;
+				right:0.5rem;
+				top:0.5rem;
+				z-index:999;
+			}
+			.musicOn{
+				animation: music 5s linear infinite;
+			}
+			@keyframes music{
+				0%{transform: rotate(0);}
+				100%{transform: rotate(360deg)}
+			}
+			@font-face {
+			  font-family: 'iconfont';  /* project id 205897 */
+			  src: url('//at.alicdn.com/t/font_d7xtr1xn0zskbj4i.eot');
+			  src: url('//at.alicdn.com/t/font_d7xtr1xn0zskbj4i.eot?#iefix') format('embedded-opentype'),
+			  url('//at.alicdn.com/t/font_d7xtr1xn0zskbj4i.woff') format('woff'),
+			  url('//at.alicdn.com/t/font_d7xtr1xn0zskbj4i.ttf') format('truetype'),
+			  url('//at.alicdn.com/t/font_d7xtr1xn0zskbj4i.svg#iconfont') format('svg');
+			}
+			.facefont{font-family:"iconfont"; font-style:normal;}
